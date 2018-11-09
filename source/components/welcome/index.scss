@@ -1,0 +1,41 @@
+body,
+html,
+.content {
+    @include size(100%);
+}
+
+.content {
+    @include flexContainer($justify: center, $align: center, $direction: column);
+}
+
+.logo {
+    margin-bottom: 6rem;
+}
+
+.links {
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+    z-index: 100;
+
+    &__link {
+        color: $secondary;
+        transition: color .1s ease-in-out;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+@mobileLandscape {
+    .links {
+        &__item {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}
