@@ -1,0 +1,25 @@
+.perspectives {
+    align-items: center;
+    background-image: url('/assets/images/perspectives1X.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 3rem 12%;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        @include absolute(0,0,0,0);
+
+        background-color: rgba(#fff, 0.9);
+        content: '';
+    }
+
+    &__content {
+        z-index: 999;
+    }
+}

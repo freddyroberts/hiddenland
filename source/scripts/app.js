@@ -1,10 +1,17 @@
+import $ from 'wee-dom';
+import $router from 'wee-routes';
+import $events from 'wee-events';
 import './bootstrap';
 
-// Begin your application here
-// Example:
-
-// import $router from 'wee-routes';
-
-// $router.map([
-//     { path: '/', init() { 'Hello World' } }
-// ]).run();
+$router.map([
+    {
+        path: '/',
+        init() {
+            $events.on('window', 'load', (e, el) => {
+                $('.js-site-nav').addClass('-loaded');
+                // Click logic
+                e.preventDefault();
+            });
+        },
+    },
+]).run();

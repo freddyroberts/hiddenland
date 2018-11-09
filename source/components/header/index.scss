@@ -1,0 +1,52 @@
+.site-header {
+    background-image: url('/assets/images/remindme1x.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    height: 100vh;
+    padding: 3rem 12%;
+
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-200%);
+        transition: transform ease-in .6s;
+
+        &.-loaded {
+            transform: translateY(0%);
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    ul {
+        display: none;
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: rgba(#000, 0.6);
+        }
+    }
+}
+
+@tablet {
+    .site-header {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+    }
+}
+
+@desktop {
+    .site-header {}
+}
