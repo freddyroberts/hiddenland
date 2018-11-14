@@ -5,6 +5,29 @@
 
 @import '~wee-core/styles/variables.scss';
 
-// Assign variables that need to reference default variables below
+// Layout
+$maxWidth: 1800px; // max container width, false to disable
+$bumperPadding: 6%;  // bumper padding on containers, false to disable
+$padContainer: true; // enable bumperPadding on containers
 
-// $liMarginBottom: $blockMarginBottom;
+// Color 
+$black: rgba(#000, 0.9);
+
+$baseFont: 'Open Sans', sans-serif;
+
+// Paragraphs
+$paragraphColor: inherit;
+
+// HR
+$ruleColor: $darkerGray;
+$ruleHeight: 2px;
+$ruleStyle: solid;
+$ruleMargin: 2rem;
+
+$iconFont: 'hiddenland';
+$woff2Enabled: false;
+$light: 200;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$smallFontSize: 1.3rem;

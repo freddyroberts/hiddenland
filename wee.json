@@ -1,6 +1,6 @@
 {
     "paths": {
-        "root": "public",
+        "root": "docs",
         "assets": "assets",
         "source": "source",
         "build": "build"
@@ -51,7 +51,7 @@
         "host": "auto",
         "port": 9000,
         "https": true,
-        "proxy": "https://wee.dev",
+        "proxy": "https://hiddenland.dev",
         "static": true,
         "reload": {
             "enable": true,

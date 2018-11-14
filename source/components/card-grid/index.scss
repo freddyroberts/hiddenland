@@ -1,0 +1,17 @@
+.card-grid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    position: relative;
+}
+
+@tablet {
+    .card-grid {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 8rem auto;
+        max-width: 115rem;
+    }
+}

@@ -1,0 +1,34 @@
+.card {
+    background: #fff;
+    border: 1px solid $lighterGray;
+    color: $baseColor;
+    display: block;
+    margin: $blockMarginBottom 0;
+    padding: 1rem 1rem 4rem;
+    text-align: center;
+    transition: transform 0.59s cubic-bezier(1,.35,.16,.59);
+    width: 30rem;
+
+    &:hover {
+        color: rgba($baseColor, 0.7);
+        cursor: pointer;
+        transform: translateY(-5%);
+    }
+
+    h3 {
+        margin: 1rem 0;
+        text-transform: uppercase;
+    }
+
+    hr {
+        margin: $ruleMargin auto;
+        max-width: 6rem;
+    }
+
+}
+
+@tablet {
+    .card {
+        width: 45%;
+    }
+}

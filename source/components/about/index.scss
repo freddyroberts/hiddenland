@@ -1,0 +1,26 @@
+.about {
+    &__content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@desktop {
+    .about {
+        &__content {
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__info {
+            width: 45%;
+        }
+
+        &__image-container {
+            width: 45%;
+        }
+    }
+}

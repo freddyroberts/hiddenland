@@ -1,17 +1,11 @@
-import $ from 'wee-dom';
 import $router from 'wee-routes';
-import $events from 'wee-events';
 import './bootstrap';
+import header from '../components/header';
+import cardPopup from '../components/card';
 
 $router.map([
     {
         path: '/',
-        init() {
-            $events.on('window', 'load', (e, el) => {
-                $('.js-site-nav').addClass('-loaded');
-                // Click logic
-                e.preventDefault();
-            });
-        },
+        handler: [header, cardPopup],
     },
 ]).run();

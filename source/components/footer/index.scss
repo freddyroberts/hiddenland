@@ -1,0 +1,37 @@
+.footer {
+    background-color: $black;
+    color: #fff;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+@tablet {
+    .footer {
+        background-color: $black;
+        color: #fff;
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 40rem;
+        }
+    
+        a {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.latest {
+    background-image: url('/assets/images/latest-releases1x.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $black;
+    padding: 3rem 12%;
+    position: relative;
+
+    &::before {
+        @include absolute(0,0,0,0);
+
+        background-color: rgba(black, 0.1);
+        content: '';
+    }
+}

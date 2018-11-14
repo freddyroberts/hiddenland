@@ -1,25 +1,51 @@
 .perspectives {
-    align-items: center;
-    background-image: url('/assets/images/perspectives1X.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #000;
+    color: #fff;
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    padding: 3rem 12%;
+    flex-direction: column;
+    padding: 0;
     position: relative;
-    text-align: center;
 
-    &::before {
-        @include absolute(0,0,0,0);
+    &__image-container {
+        position: relative;
 
-        background-color: rgba(#fff, 0.9);
-        content: '';
+        &::before {
+            @include absolute(0,0,0,0);
+
+            background-color: rgba(#000, 0.3);
+            content: '';
+        }
+    }
+
+    &__image {
+        vertical-align: middle;
     }
 
     &__content {
-        z-index: 999;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@tablet {
+    .perspectives {
+        color: $black;
+        flex-direction: row;
+    
+        &__image-container {
+            width: 50%;
+        }
+
+        &__content {
+            position: static;
+            margin: 0 auto;
+            text-align: center;
+            height: auto;
+            width: 50%;
+        }
     }
 }

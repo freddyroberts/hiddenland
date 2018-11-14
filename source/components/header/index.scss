@@ -3,29 +3,50 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #000;
+    color: $black;
     height: 100vh;
     padding: 3rem 12%;
+    position: relative;
 
+    &__title {
+        margin: 0 0 3rem;
+    }
 
     &__nav {
         align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         transform: translateY(-200%);
-        transition: transform ease-in .6s;
+        transition: transform 0.8s cubic-bezier(1,.35,.16,.59);
 
         &.-loaded {
             transform: translateY(0%);
         }
     }
 
-    &__title {
-        margin: 0;
+    &__content {
+        @include absolute(0,0,0,0);
+
+        position: absolute;
+        text-align: center;
+        transform: translateY(30%);
+    }
+
+    &__album-title {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+    &__album-info {
+        font-size: 3rem;
+        text-transform: lowercase;
     }
 
     ul {
-        display: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     a {
@@ -39,10 +60,18 @@
 
 @tablet {
     .site-header {
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__nav {
+            flex-direction: row;
+        }
+
         ul {
             display: flex;
             justify-content: space-between;
-            width: 60%;
+            width: 40%;
         }
     }
 }
