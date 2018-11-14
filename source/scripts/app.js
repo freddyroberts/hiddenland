@@ -5,7 +5,7 @@ import cardPopup from '../components/card';
 
 $router.map([
     {
-        path: '/',
+        path: '*',
         handler: [header, cardPopup],
     },
 ]).run();
