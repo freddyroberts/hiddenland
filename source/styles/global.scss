@@ -9,12 +9,17 @@
 
 // Import generated media query file for screen mapping
 @import '../../build/temp/responsive';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:700|Oswald:300|Ubuntu');
 
 #global {
     // Global helpers and state modifiers
 }
 
 body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
     &.-popup {
         position: fixed;
     }

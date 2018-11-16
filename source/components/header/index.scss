@@ -9,6 +9,7 @@
 
     &__title {
         margin: 0 0 3rem;
+        text-transform: uppercase;
     }
 
     &__nav {
@@ -48,6 +49,7 @@
 
     a {
         color: inherit;
+        font-size: 1.8rem;
 
         &:hover {
             color: rgba(#000, 0.6);

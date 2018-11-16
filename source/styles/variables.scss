@@ -5,6 +5,7 @@
 
 @import '~wee-core/styles/variables.scss';
 
+
 // Layout
 $maxWidth: 1800px; // max container width, false to disable
 $bumperPadding: 6%;  // bumper padding on containers, false to disable
@@ -13,7 +14,9 @@ $padContainer: true; // enable bumperPadding on containers
 // Color 
 $black: rgba(#000, 0.9);
 
-$baseFont: 'Open Sans', sans-serif;
+$baseFont: 'Oswald', sans-serif;
+$headingFont: 'Ubuntu', sans-serif;
+$headingFontWeight: $boldFontWeight;
 
 // Paragraphs
 $paragraphColor: inherit;
