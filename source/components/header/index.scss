@@ -21,13 +21,31 @@
         &.container {
             padding: 0;
         }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+    
+    
+            a {
+                color: inherit;
+                font-size: 1.8rem;
+    
+                &:hover {
+                    color: rgba(#000, 0.6);
+                }
+            }
+        }
     }
 
     &__content {
         @include absolute(0,0,0,0);
 
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        text-align: center;
         transform: translateY(30%);
     }
 
@@ -41,19 +59,10 @@
         text-transform: lowercase;
     }
 
-    ul {
+    &__album-links {
         display: flex;
         justify-content: space-evenly;
-        width: 100%;
-    }
-
-    a {
-        color: inherit;
-        font-size: 1.8rem;
-
-        &:hover {
-            color: rgba(#000, 0.6);
-        }
+        width: 20rem;
     }
 }
 
@@ -62,7 +71,7 @@
         &__title {
             margin-bottom: 0;
         }
-
+        
         &__nav {
             flex-direction: row;
             transform: translateY(-200%);
@@ -71,9 +80,15 @@
             &.-loaded {
                 transform: translateY(0%);
             }
-
+            
             &.container {
                 padding: 0 $bumperPadding;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
             }
         }
 
@@ -85,11 +100,6 @@
             font-size: 3rem;
         }
 
-        ul {
-            display: flex;
-            justify-content: space-between;
-            width: 40%;
-        }
     }
 }
 

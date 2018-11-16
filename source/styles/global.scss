@@ -61,6 +61,20 @@ body {
     }
 }
 
+.listen {
+    font-size: 0;
+    color: $black;
+    transition: color 0.8s cubic-bezier(1,.35,.16,.59);
+
+    &::before {
+        font-size: 3.2rem;
+    }
+
+    &:hover {
+        color: rgba($black, 0.5);
+    }
+}
+
 iframe {
     margin: 0;
 }
